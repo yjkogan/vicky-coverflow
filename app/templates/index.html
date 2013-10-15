@@ -1,0 +1,18 @@
+{{> base/header.html}}
+
+<div id='container'>
+{{# photos }}
+    <a name="{{ number }}" class="card">
+      <img src="{{ url }}">
+    </a>
+{{/ photos }}
+</div>
+<div id='buttons'>
+{{# photos }}
+	<a href='#{{ number }}' class='button'></a>
+{{/ photos }}
+</div>
+<script type="text/javascript" src='/js/index.js'></script>
+<div id='lightboxes'>
+</div>
+{{> base/footer.html}}

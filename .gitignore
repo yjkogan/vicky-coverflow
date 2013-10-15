@@ -1,0 +1,8 @@
+# Node Package stuff
+node_modules/
+
+# Config Files
+tumblr.js
+
+# Temp Files
+*~

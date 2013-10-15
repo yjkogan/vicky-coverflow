@@ -1,0 +1,13 @@
+{
+  "name": "NodeTemplate",
+  "description": "Basic Node Project to be copied",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "~3.1.1",
+    "hogan-engine": "~0.9.2",
+    "underscore": "~1.4.4",
+    "async": "~0.2.7",
+    "tumblr.js": "0.0.4"
+  }
+}

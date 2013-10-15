@@ -1,0 +1,73 @@
+/* Source for most of the awesomeness: http://sandropaganotti.com/2011/08/05/a-pure-css3-coverflow-effect-for-chrome-firefox-and-safari/ */
+a {
+	color: transparent;
+}
+.card {
+	width: 35%;
+    margin: 0% -16.2%;
+    float: left;
+    display: block;
+    border-radius: 10px;
+    -webkit-transform: rotateY( 120deg);
+    -webkit-transition: all 1s ease-out;
+    text-decoration: none;
+}
+  
+.card img{
+    margin: auto;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.2;
+    -webkit-transition: all 1s ease-out;
+}
+  
+.card:target{
+    -webkit-transform: rotateY( 0deg);
+    margin: 0 5%;
+    z-index: 90;
+    outline: none;
+}
+  
+.card:active{
+    overflow: hidden;
+}
+
+.card:target img{
+	opacity: 1;
+    image-rendering: optimizeQuality;
+}
+  
+.button{
+	height: 16px;
+	width: 16px;
+	border-radius: 8px;
+	margin: 10px 3px;
+	float: left;
+	display: block;
+	background: white;
+	-webkit-box-shadow: inset 2px 2px 2px  #999, inset -1px -1px 1px  #999;; 
+	box-shadow: inset 2px 2px 2px  #999, inset -1px -1px 1px  #999;
+}
+
+.button:hover{
+	background: #DDD;
+}
+
+#container{
+	margin: 15px auto;
+    width: 100%;
+    height: 90%;
+    max-width: 1024px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 900; /* For compatibility with iPhone 3.0, we leave off the units here */
+    -webkit-perspective-origin: 100% 30%;
+}
+
+#buttons{
+	width: 480px;
+	position: absolute;
+	z-index: 999;
+	bottom: 3px;
+	left: 50%;
+	margin-left: -240px;
+}
